@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/java/!svn/ver/240/ExamOnline/src/com/neuedu/examonline/base/course
+END
+UserBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/java/!svn/ver/240/ExamOnline/src/com/neuedu/examonline/base/course/UserBean.java
+END
+UserUpdateServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/java/!svn/ver/133/ExamOnline/src/com/neuedu/examonline/base/course/UserUpdateServlet.java
+END
+UserObj.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/java/!svn/ver/133/ExamOnline/src/com/neuedu/examonline/base/course/UserObj.java
+END
+UserAddServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/java/!svn/ver/133/ExamOnline/src/com/neuedu/examonline/base/course/UserAddServlet.java
+END

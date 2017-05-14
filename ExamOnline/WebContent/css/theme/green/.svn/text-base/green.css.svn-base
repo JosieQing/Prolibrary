@@ -1,0 +1,4 @@
+body{
+	background-image  :url(../../../system/theme/pic/green.jpg); 
+	background-repeat:repeat;
+	}

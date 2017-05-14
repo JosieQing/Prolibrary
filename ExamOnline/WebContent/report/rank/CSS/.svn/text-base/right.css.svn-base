@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /*background-color: aqua;*/
+}
+.right-top{
+    width: 100%;
+    /*border: 1px solid black;*/
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.right-content{
+    width: 900px;
+    /*border: 1px solid black;*/
+    margin: 0 auto;
+    margin-top: 25px;
+    font-family: sans-serif;
+}
+.form-content-input1{
+    height: 20px;
+}
+
+.form-content span{
+    margin-left:15px;
+}
+.form-content-input2{
+    padding: 3px 20px 3px 20px;
+    margin-left:30px;
+}
+.right-content-table{
+    margin: 0 auto;
+    text-align: center;
+    border-collapse:collapse;
+}
+.right-content-table-td{
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+}
+.right-content-table-tdv-xh{
+    width: 50px;
+    height: 30px;
+    border: 1px solid black;
+}
+.right-content-paging {
+    text-align: center;
+    margin-top: 20px;
+}
+.form-content-select{
+    width: 150px;
+    height: 25px;
+}
+.form-content-option{
+    font-size: 15px;
+}
+.right-content-table-tr{
+    height: 40px;
+    background-color:#e8e8e8;
+}
+.right-content-table-tr1{
+	 height: 40px;
+	/* background-color:#e8e8e8;*/
+	 color:#555555;
+}
+#province div,ul,li{margin:0;padding:0;}
+#province a{color:#000;text-decoration:none;line-height:30px;padding:0 10px;}
+#province a:hover{color:#C00;}
+#province{
+	position:absolute;
+	right: 500px;
+}
+#province strong{
+	width:48px;
+	height:42px;
+	color:#FFF;
+	line-height:42px;
+	font-size:14px;
+	font-weight:bold;
+	display:block;
+	float:left;}
+#province span{
+	width:200px;
+	height:24px;
+	line-height:24px;
+	border:1px solid #999;
+	background:#FFF url(province_sprites.png) no-repeat 189px -2px;
+	display:block;
+	float:left;
+	margin-top:8px;
+	padding-left:4px;
+	cursor:pointer;
+	}
+#province ul{
+	width:200px;
+	height:auto;
+	background:#FFF;
+	border:1px solid #dfdfdf;
+	border-bottom:none;
+	clear:both;
+	position:absolute;
+	left:60px;
+	top:35px;
+	display:none;
+	}
+#province ul li{
+	height:30px;
+	line-height:30px;
+	border-bottom:1px solid #dfdfdf;
+	padding-left:10px;}
+#province ul li b{
+	font-weight:bold;
+}
+ul,li{
+	list-style:none;
+	}
+.show{
+	display:block;
+	}

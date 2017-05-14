@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/java/!svn/ver/382/ExamOnline/src/com/neuedu/examonline/base/classsys
+END
+select.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/java/!svn/ver/382/ExamOnline/src/com/neuedu/examonline/base/classsys/select.java
+END
+release.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/java/!svn/ver/243/ExamOnline/src/com/neuedu/examonline/base/classsys/release.java
+END
+delete.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/java/!svn/ver/243/ExamOnline/src/com/neuedu/examonline/base/classsys/delete.java
+END
+update.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/java/!svn/ver/243/ExamOnline/src/com/neuedu/examonline/base/classsys/update.java
+END
+Class_control.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/java/!svn/ver/218/ExamOnline/src/com/neuedu/examonline/base/classsys/Class_control.java
+END
+AllSelect.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/java/!svn/ver/363/ExamOnline/src/com/neuedu/examonline/base/classsys/AllSelect.java
+END
+add.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/java/!svn/ver/262/ExamOnline/src/com/neuedu/examonline/base/classsys/add.java
+END
+option.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/java/!svn/ver/243/ExamOnline/src/com/neuedu/examonline/base/classsys/option.java
+END
+DelClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/java/!svn/ver/363/ExamOnline/src/com/neuedu/examonline/base/classsys/DelClass.java
+END
+AddClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/java/!svn/ver/363/ExamOnline/src/com/neuedu/examonline/base/classsys/AddClass.java
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/java/!svn/ver/323/ExamOnline/WebContent/system/role
+END
+role_add_action.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/java/!svn/ver/197/ExamOnline/WebContent/system/role/role_add_action.jsp
+END
+role_add.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/java/!svn/ver/302/ExamOnline/WebContent/system/role/role_add.jsp
+END
+power_update_action.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/java/!svn/ver/197/ExamOnline/WebContent/system/role/power_update_action.jsp
+END
+role_manager.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/java/!svn/ver/302/ExamOnline/WebContent/system/role/role_manager.jsp
+END
+power_update.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/java/!svn/ver/302/ExamOnline/WebContent/system/role/power_update.jsp
+END
+role_delete_action.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/java/!svn/ver/197/ExamOnline/WebContent/system/role/role_delete_action.jsp
+END

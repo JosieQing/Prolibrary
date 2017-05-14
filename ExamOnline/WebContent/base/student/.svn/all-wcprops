@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/java/!svn/ver/280/ExamOnline/WebContent/base/student
+END
+add.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/java/!svn/ver/264/ExamOnline/WebContent/base/student/add.js
+END
+add.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/java/!svn/ver/264/ExamOnline/WebContent/base/student/add.jsp
+END
+list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/java/!svn/ver/280/ExamOnline/WebContent/base/student/list.jsp
+END
+delete_action.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/java/!svn/ver/264/ExamOnline/WebContent/base/student/delete_action.jsp
+END
+update.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/java/!svn/ver/264/ExamOnline/WebContent/base/student/update.js
+END
+update.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/java/!svn/ver/264/ExamOnline/WebContent/base/student/update.jsp
+END

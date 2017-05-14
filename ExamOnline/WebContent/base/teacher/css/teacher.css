@@ -1,0 +1,34 @@
+
+#login_btn{
+		width:500px;
+		height:300px;
+		font-size:100px;
+		border-radius:50px;
+		border:10px solid #2576A8;
+		background:-moz-linear-gradient(top,#66B5E6,#2e88c0);
+		box-shadow:0 1px 2px #B8DCF1 inset,0 -1px 0 #316F96 inset;
+		color:#fff;
+		text-shadow:1px 0.5px #22629B;
+	}
+#login_btn{
+		background:-moz-linear-gradient(top,#8DC9EF,#4E9FD1);
+	}
+	
+.login_div{
+	
+	position:absolute;
+    top:120px;
+    left:260px;  
+
+		
+}
+.login_body{
+	
+	background-image: url(../img/login2.jpg);
+	
+
+
+	
+}
+	
+	

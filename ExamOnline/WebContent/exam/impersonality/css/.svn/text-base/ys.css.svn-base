@@ -1,0 +1,43 @@
+.i1{
+width:150px;
+height:23px;
+}
+#b1{
+background-color:#afdfe4
+}
+#j2{
+width:30px;
+height:22px;
+}
+#p1{
+font-weight:bold;
+text-align: center;
+font-size: 20px;
+}
+.s1{
+font-size: 23px;
+font-family:华文彩云;
+}
+
+
+
+.i2{
+width:150px;
+height:22px;
+}
+#j1{
+width:30px;
+height:22px;
+}
+#b2{
+background-color:#bbffff
+}
+#p2{
+font-weight:bold;
+text-align: center;
+font-size: 20px;
+}
+#s2{
+font-family:华文彩云;
+font-size: 23px;
+}

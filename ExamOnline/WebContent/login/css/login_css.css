@@ -1,0 +1,29 @@
+#menu{
+	background-color:#d0ffd0;
+	position:absolute;
+    top:100px;
+    left:10px;
+}
+.body_left{
+	background-color:#d0ffd0;
+}
+
+#menu ul{
+	list-style-type:none;
+}
+
+.body_top{
+	background-color:#b3d9ff;
+}
+
+.body_main{
+	background-color:#ffffff;
+}
+
+.body_bottom{
+	background-color:#b3d9ff;
+}
+a{
+	text-decoration:none;
+	font-size:20px;
+}
