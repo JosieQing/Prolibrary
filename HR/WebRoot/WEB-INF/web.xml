@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<!--初始化参数context上下文-->
+	<context-param>
+	<param-name>pageSize</param-name>
+	<param-value>3</param-value>
+	</context-param>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+	<!--部门-->
+		<servlet>
+		<servlet-name>deptServlet</servlet-name>
+		<servlet-class>com.neusoft.control.DepartmentServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+		<servlet-name>deptServlet</servlet-name>
+		<url-pattern>/servlet/department</url-pattern>
+		</servlet-mapping>
+	<!--岗位-->	
+		<servlet>
+		<servlet-name>jobServlet</servlet-name>
+		<servlet-class>com.neusoft.control.JobServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+		<servlet-name>jobServlet</servlet-name>
+		<url-pattern>/servlet/job</url-pattern>
+		</servlet-mapping>
+	<!--员工-->	
+		<servlet>
+		<servlet-name>empEntryServlet</servlet-name>
+		<servlet-class>com.neusoft.control.EmpEntryServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+		<servlet-name>empEntryServlet</servlet-name>
+		<url-pattern>/servlet/empEntry</url-pattern>
+		</servlet-mapping>	
+	<!--试用期-->
+		<servlet>
+		<servlet-name>probationManServlet</servlet-name>
+		<servlet-class>com.neusoft.control.ProbationManServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+		<servlet-name>probationManServlet</servlet-name>
+		<url-pattern>/servlet/probationManServlet</url-pattern>
+		</servlet-mapping>
+	<!--调动管理-->
+		<servlet>
+		<servlet-name>transferManServlet</servlet-name>
+		<servlet-class>com.neusoft.control.TransferManServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+		<servlet-name>transferManServlet</servlet-name>
+		<url-pattern>/servlet/transferManServlet</url-pattern>
+		</servlet-mapping>
+		
+		
+		<!--AjaxServlet-->
+		<servlet>
+		<servlet-name>ajaxServlet</servlet-name>
+		<servlet-class>com.neusoft.control.AjaxServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+		<servlet-name>ajaxServlet</servlet-name>
+		<url-pattern>/servlet/ajaxServlet</url-pattern>
+		</servlet-mapping>
+		<!-- 登录 -->
+		<servlet>
+		<servlet-name>adminServlet</servlet-name>
+		<servlet-class>com.neusoft.control.AdminServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminServlet</servlet-name>
+		<url-pattern>/servlet/adminServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 修改 -->
+	<servlet>
+		<servlet-name>adminManagerServlet</servlet-name>
+		<servlet-class>com.neusoft.control.AdminManagerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminManagerServlet</servlet-name>
+		<url-pattern>/servlet/adminManagerServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 验证码 -->
+		<servlet>
+		<servlet-name>imgServlet</servlet-name>
+		<servlet-class>com.neusoft.control.imgServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>imgServlet</servlet-name>
+		<url-pattern>/servlet/imgServlet</url-pattern>
+	</servlet-mapping>
+	<!--新聘员工报表-->
+	<servlet>
+		<servlet-name>formNew</servlet-name>
+		<servlet-class>
+			com.neusoft.control.formNewServlet
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>formNew</servlet-name>
+		<url-pattern>/servlet/formNewServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- 部门调动报表-->
+	<servlet>
+		<servlet-name>formDept</servlet-name>
+		<servlet-class>
+			com.neusoft.control.MoveDeptServlet
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>formDept</servlet-name>
+		<url-pattern>/servlet/moveDeptServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<!--岗位调动报表 -->
+		<servlet>
+		<servlet-name>formEmployee</servlet-name>
+		<servlet-class>
+			com.neusoft.control.MoveEmployeeServlet
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>formEmployee</servlet-name>
+		<url-pattern>/servlet/moveEmployeeServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<!--离职报表 -->
+	<servlet>
+		<servlet-name>formResgin</servlet-name>
+		<servlet-class>
+			com.neusoft.control.formResginServlet
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>formResgin</servlet-name>
+		<url-pattern>/servlet/formResginServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!--离职员工处理 -->
+	<servlet>
+		<servlet-name>employeeLeave</servlet-name>
+		<servlet-class>
+			com.neusoft.control.employeeLeaveServlet
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>employeeLeave</servlet-name>
+		<url-pattern>/servlet/employeeLeaveServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!--离职员工查询 -->
+	<servlet>
+		<servlet-name>LeaveMassage</servlet-name>
+		<servlet-class>
+			com.neusoft.control.employeeLeaveMassageServlet
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LeaveMassage</servlet-name>
+		<url-pattern>/servlet/employeeLeaveMassageServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!--filter-->
+	<filter>
+		<filter-name>charset</filter-name>
+		<filter-class>
+			com.neusoft.filter.CharacterEncodingFilter
+		</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>utf-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>charset</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+</web-app>

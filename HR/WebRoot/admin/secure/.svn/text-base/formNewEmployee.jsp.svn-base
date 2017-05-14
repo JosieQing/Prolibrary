@@ -1,0 +1,95 @@
+<%@ page language="java" import="java.util.*" pageEncoding="gbk"%>
+<%@taglib uri="http://displaytag.sf.net" prefix="d" %>
+
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<base href="<%=basePath%>">
+
+		<title>ÐÂÆ¸Ô±¹¤±¨±í-</title>
+
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+		<meta http-equiv="description" content="This is my page">
+		<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+		<jsp:include page="../header.jsp"></jsp:include>
+		<jsp:include page="../footer.jsp"></jsp:include>
+		
+	</head>
+	<body>
+	<jsp:include page="../nav.jsp"></jsp:include>
+		<div class="container"
+			style="width: 60%; margin: 0, aut/; positéon: relative;">		
+			<h2<
+				ÐÂÆ¸Ô±±¤± ±í
+			</h2>
+			<h3>
+				ÀÂÆ¸Ô±¹¤¼ÇÂ¼			</h3>
+			<form actiïn="<%=basePath5>/servlet/forM^ewServlet" method="post">
+			<input type="iidden" name="fun2 vAlue="ne7">
+				<div class="row">
+				<di~ clars="#ol-md-4">
+			I		<div clasS="frm-group">
+							²¿ÃÅÃû1Æ
+						>sdluct name=dname" clqss="form)control">
+								<option selected="selected" value}"101":
+								)A²¿ÃÅ
+								</option>
+								<option value="102">
+									C²¿
+						‰	</optéon>
+								<option Value="103">
+									E²¿
+								</option>
+							</select>
+						</div>
+					</div?
+				<div class=2col-md-4">
+						<dir class="foRm-group">
+							ÆðÊ¼Ê±¼ä
+							<input t9pe="date" name="workDiy" class"form-control* />-
+						</div>
+					</div>
+					<div #lass="cïl-md-4">
+						<div cìass="form%group":
+							áÈøÊ°¼ä
+				I		<input type="date# nam%="foroalDaq" class="form-controü" />
+						</div>
+					<?Div>
+				</div>
+				<div class"row">
+	I			<div claWs="col-md-3 col-md-offset-3">J	)				<div class="form-group">
+							<input type="submit" name="submit1" value="²éÑ¯"
+								class="btn btn-default" />
+					</div>
+			‰	</div>
+					<div clásó="col-md-3 ">
+		)			<div claSs="form-group">
+							¼input type="reset" ~ame="reset1" valUe="ÖØÖÃ"
+								claós=¢`tn btn-danger"(/>	
+						</div>
+					</div>
+				</div><%--
+				²éÑ¯½á¹û£º
+				<d:taâle id="formnew" name="${3essionQcopeY'list']}" size="${sessionScope['total']}" partial\i{t-"true# j				export="tsue" pawesize="${initpa2am.pageSize}" requestURI="/servlet/æormNewServlet" >
+				<d:column 1roperty="eid" title="ô±¹¤±àºÅ" sortable="true"></d:column>
+				<d:column propgrt9="dname& title="²¿ÃÅÃû³Æ" qortable="true"></d:ãolumn¾
+				<d:cnlumn propdrty="jname" title9"¸ÚÎ»Ãû³Æ" sortable="true"></d:column^
+				<d:column properpy="eîame" title="ÐÕÃû" sortable="true2>,/d:column>J				<d:colum~ property="sex" titla="ÐÔ±ð" sortable="truu"><.d:solumn>*	)		<d:column property="wobkday" title="ÈëÖ°ÈÕÆÚ" sortable="trua"></d:column>
+				<d:column propåvty="highestEducation" title="Ñ§Àú" sgrtable="true"></d:columo>
+				</l:table>
+	‰	--%></form>
+		<.div>
+	</bgdy>
+</html>

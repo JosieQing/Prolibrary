@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+            http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+	<bean id="placeholderConfig"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>classpath:dataSource.properties</value>
+		</property>
+	</bean>
+
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+		<property name="driverClass" value="${driverClass}"></property>
+		<property name="jdbcUrl" value="${jdbcUrl}"></property>
+		<property name="user" value="${user}"></property>
+		<property name="password" value="${password}"></property>
+		<property name="initialPoolSize" value="${initialPoolSize}"></property>
+		<property name="maxIdleTime" value="${maxIdleTime}"></property>
+		<property name="maxPoolSize" value="${maxPoolSize}"></property>
+		<property name="minPoolSize" value="${minPoolSize}"></property>
+		<property name="maxStatements" value="${maxStatements}"></property>
+		<property name="testConnectionOnCheckin" value="${testConnectionOnCheckin}"/>
+    	<property name="testConnectionOnCheckout" value="${testConnectionOnCheckout}"/>
+	</bean>
+
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">  
+		<property name="dataSource" ref="dataSource" />  
+		<property name="configLocation" value="classpath:mybatis-config.xml"></property>  
+	</bean>
+	
+	<!--Spring管理: @Resource(name="id")注入实现类  -->
+	<bean id="loginDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<!--指定接口：  -->  
+		<property name="mapperInterface" value="org.office.leavemanagement.dao.LoginDao"></property>  
+		<property name="sqlSessionFactory" ref="sqlSessionFactory"></property>  
+	</bean> 
+	
+	<bean id="leaveDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<!--指定接口：  -->  
+		<property name="mapperInterface" value="org.office.leavemanagement.dao.LeaveDao"></property>  
+		<property name="sqlSessionFactory" ref="sqlSessionFactory"></property>  
+	</bean>
+
+</beans>

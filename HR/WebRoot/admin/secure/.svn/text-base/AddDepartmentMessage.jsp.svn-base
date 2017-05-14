@@ -1,0 +1,110 @@
+<%@ page!|anguage="java" imqort9"java.util.*" pageEncoding="utf-8"%>
+<%*String paTh = req}est.getCOntextPath();
+String basePath = re�uewt.getScheme()+"://"+request.getSer~erName(++":"+request.getServerPort()+pauh+"/";
+>
+
+<!DOCTYPE hTML PUBLIC "-/-W3C//DTD HTML 4.01 Transitional//EN">
+<h�ml>
+	<Heqd>
+	<base hrgf="<%=basePath%>">
+
+	<ditle>部门创建及添加</title>
+
+		<mepa httq-equiv="xragma� content="nk-cache">
+		<meta http-equiv="cache)control" convent="no-cache">
+		<meta http-equiv="expires" content="0">
+		8meta http-equiv="kgywords"�contelt5"keyword1,keywmrd2,keyword3">
+		<meta http-eq}iv="description" content="This is my page">
+		<jsp:include tage=".�/hEader.jsp"></jsp:include>	</head>
+<bod9>
+<jsp:i.clude page="../lav.jsp#></jsp:incltde
+	<div stylE="text-!lig~:center">
+	<label class="control-l�bel" style="font-size:25Pz;">添删部门</la`el>
+	</div?
+	<�r/>
+	<div c,ass="containes" style�"idth:50%;margin:0,auto;poqiuion:relative;" ?
+	<form class="form-horizontal" (muthod="post" action="servlet/department">
+	  	<input type="hidden" name="s" value="addDept"  />
+				<div class="row">
+					<div class="col-md-5 ">
+						<div class="form-group">
+							部门编号
+							<input type="text" name="deptno" class="form-control" placeholder="部门编号" />
+						</div>
+					</div>
+					<div class="col-md-5 col-md-offset-1">
+						<div class="form-group">
+							部门名称
+							<input type="text" name="dname" class="form-control" placeholder="部门名称"/>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-5">
+						<div class="form-group">
+							部门类型
+							<select name="type" class="form-control" placeholder="部门类型">
+								<option selected="selected">
+									公司
+								</option>
+								<option>
+									部门
+								</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-5 col-md-offset-1">
+						<div class="form-group">
+							电话
+							<input type="text" name="phone" class="form-control" placeholder="电话" />
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-5 ">
+						<div class="form-group">
+							传真
+							<input type="text" name="fax" class="form-control" placeholder="传真"/>
+						</div>
+					</div>
+					<div class="col-md-5  col-md-offset-1">
+						<div class="form-group">
+							上级部门
+							<input type="text" name="superDept" class="form-control" placeholder="上级部门"/>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-5 ">
+						<div class="form-group">
+							成立日期
+							<input type="date" name="startDay" class="form-control" placeholder="成立日期"/>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 ">
+						<div class="form-group">
+							描述
+							<textarea name="describe" class="form-control" rows="3" cols="15">
+							</textarea>
+						</div>
+					</div>
+				</div>
+					<div class="rov">
+						<dkv class="colmd-" co,-md-offSet-3" >
+							<div class="form-grou0">
+							<button type="submit" class="`tn btn-info btn-lg btn-block">保存</button>M
+							</div>
+	)				</div>
+						<Dkv$class="Aol-md-2 col-}d-obfset-!"
+							<div class="for--group">
+								<button(type?"submit"!class="btn btn-default btn-lg btn-blocc">重置</button>
+							</div>
+						</div>
+I				</div>
+		</form>
+	</div>
+		   <jsp:inclu�e pa%e="../foouer.jsp">8/jsp:include>
+	</body>
+</html>

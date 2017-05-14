@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+encoding//WebContent/WEB-INF/views/addleave.jsp=UTF-8
+encoding//WebContent/WEB-INF/views/addmgrleave.jsp=UTF-8
+encoding//WebContent/WEB-INF/views/checkleave.jsp=UTF-8
+encoding//WebContent/WEB-INF/views/login.jsp=UTF-8
+encoding//WebContent/WEB-INF/views/main.jsp=UTF-8
+encoding//WebContent/WEB-INF/views/mgrapproval.jsp=UTF-8
+encoding//WebContent/WEB-INF/views/mgrlist.jsp=UTF-8
+encoding//WebContent/WEB-INF/views/nav.jsp=UTF-8
+encoding//WebContent/WEB-INF/views/updateleave.jsp=UTF-8
+encoding//WebContent/js=UTF-8
+encoding//config/dataSource.properties=UTF-8
+encoding//config/log4j.properties=UTF-8
+encoding/<project>=UTF-8

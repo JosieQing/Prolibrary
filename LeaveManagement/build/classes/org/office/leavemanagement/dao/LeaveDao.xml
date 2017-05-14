@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="org.office.leavemanagement.dao.LeaveDao">
+
+  <insert id="addLeaveManagement" parameterType="org.office.leavemanagement.po.LeavePO" >  
+     insert into leaveManagement(lid,lname,write_time,start_time,end_time,leave_reason,state,job,leave_type) 
+     values(LM_seq.nextval,#{lname},#{write_time},#{start_time},#{end_time},#{leave_reason},#{state},#{job},#{leave_type})
+ </insert>
+
+
+<select id="listMessage" parameterType="org.office.leavemanagement.po.LeavePO" resultType="org.office.leavemanagement.po.LeavePO">
+	SELECT lid,lname,start_time,end_time,leave_reason,state,job,leave_type FROM leavemanagement
+	where job='科员'
+		<choose>
+			<when test="lname!=null and lname!=''">
+				and lname like '%${lname}%'
+			</when>
+		
+			<when test="start_time!=null and start_time!=''">
+				and start_time= #{start_time}
+			</when>
+		</choose>
+	
+</select>
+
+<select id="checkLeave" parameterType="int" resultType="org.office.leavemanagement.po.LeavePO">
+	select * from leaveManagement where lid=#{lid}
+</select>
+
+<delete id="deleteLeave" parameterType="int">
+	DELETE  leavemanagement WHERE lid=#{lid}
+</delete>
+
+<update id="updateLeave" parameterType="org.office.leavemanagement.po.LeavePO">
+	UPDATE leavemanagement SET lname=#{lname},write_time=#{write_time},start_time=#{start_time},end_time=#{end_time},
+	leave_reason=#{leave_reason},state=#{state},job=#{job},leave_type=#{leave_type}
+	WHERE lid=#{lid}
+</update>
+
+<update id="updateState" parameterType="org.office.leavemanagement.po.LeavePO">
+	UPDATE leavemanagement SET state='科长审批通过' WHERE lid=#{lid}
+</update>
+
+<select id="listMgrApproval"  resultType="org.office.leavemanagement.po.LeavePO">
+	SELECT *  FROM Leavemanagement WHERE state='科长审批通过' or state='处长审批通过'
+</select>
+
+<update id="mgrUpdateState" parameterType="org.office.leavemanagement.po.LeavePO">
+	UPDATE leavemanagement SET state='处长审批通过' WHERE lid=#{lid}
+</update>
+
+<select id="listDepApproval"  resultType="org.office.leavemanagement.po.LeavePO">
+	SELECT *  FROM Leavemanagement WHERE state='处长审批通过'
+</select>
+
+<select id="mgrlistMessage" parameterType="org.office.leavemanagement.po.LeavePO" resultType="org.office.leavemanagement.po.LeavePO">
+	SELECT lid,lname,start_time,end_time,leave_reason,state,job,leave_type FROM leavemanagement
+	where job='科长'
+		<choose>
+			<when test="lname!=null and lname!=''">
+				and lname like '%${lname}%'
+			</when>
+		
+			<when test="start_time!=null and start_time!=''">
+				and start_time= #{start_time}
+			</when>
+		</choose>
+	
+</select>
+
+<update id="updateMgrState" parameterType="org.office.leavemanagement.po.LeavePO">
+	UPDATE leavemanagement SET state='处长审批通过' WHERE lid=#{lid}
+</update>
+
+ </mapper>
